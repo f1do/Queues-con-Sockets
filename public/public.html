@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Public Screen</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="socket.io/socket.io.js"></script>
+</head>
+
+<!-- <body class="container"> -->
+
+<body>
+
+    <table>
+        <tr>
+            <td valign="middle" class="current-ticket">
+                <span id="lblTicket1" class="current-ticket-number">Waiting...</span>
+                <br>
+                <span id="lblDesk1" class="current-ticket-desk"></span>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <td>
+                            <span id="lblTicket2" class="ticket-secundario"></span>
+                            <br>
+                            <span id="lblDesk2"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span id="lblTicket3" class="ticket-secundario"></span>
+                            <br>
+                            <span id="lblDesk3"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span id="lblTicket4" class="ticket-secundario"></span>
+                            <br>
+                            <span id="lblDesk4"></span>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <script src="./js/libs/jquery.min.js"></script>
+    <script src="./js/socket-public.js"></script>
+</body>
+
+</html>
